@@ -20,7 +20,7 @@ const Navbar = () => {
         <div>Services</div>
         <div>About</div>
         <div>Contact</div>
-        <div className="bg-primary-bg p-2.5 rounded-[2px] text-[#ffffff] ">
+        <div className="bg-primary-bg p-2.5 rounded-[2px] text-white ">
           Request a Quote
         </div>
       </div>

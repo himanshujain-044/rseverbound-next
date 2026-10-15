@@ -14,10 +14,10 @@ const Hero = () => {
           projects.
         </p>
         <div className="flex gap-2">
-          <button className="bg-primary-bg text-[#ffffff] p-3 rounded-[2px]">
+          <button className="bg-primary-bg text-white p-3 rounded-[2px]">
             Explore Our Products
           </button>
-          <button className="bg-[#ffffff]  p-3 rounded-[2px]">
+          <button className="bg-white  p-3 rounded-[2px]">
             Request a Quote
           </button>
         </div>
@@ -25,12 +25,10 @@ const Hero = () => {
           RS Ever Bound · Electrical cable trader
         </h2>
       </div>
-      <div className="relative flex-1 w-[30%]">
+      <div className="relative flex-1">
         <Image
           src="/hero.png"
           alt="Premium Electrical Cables Showcase"
-          // width={800}
-          // height={1200}
           fill={true}
           className="object-contain"
         />
