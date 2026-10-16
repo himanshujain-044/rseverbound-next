@@ -7,8 +7,3 @@ body {
   padding: 0;
 }
 
-@media (max-width: 480px) {
-  .hero-img {
-    min-height: 400px;
-  }
-}

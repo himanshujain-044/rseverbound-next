@@ -1,8 +1,8 @@
-import Hero from "../components/features/Hero";
+import Home from "./home/page";
 
-const Home = () => {
+
+export default function Main() {
   return (
-    <Hero/>
+    <Home />
   );
-};
-export default Home;
+}
