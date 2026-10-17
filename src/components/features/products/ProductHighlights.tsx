@@ -1,4 +1,4 @@
-import { feature } from '../../../data';
+import { feature } from '../../../../data';
 import SharedSvg from '@/src/components/shared/SharedSvg';
 
 function FeatureCards() {
@@ -21,9 +21,7 @@ function FeatureCards() {
             {item.title}
           </h3>
 
-          <p className="mt-2 text-md  text-primary-text">
-            {item.description}
-          </p>
+          <p className="mt-2 text-md  text-primary-text">{item.description}</p>
         </div>
       ))}
     </div>
