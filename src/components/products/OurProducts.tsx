@@ -5,12 +5,12 @@ export default function OurProducts() {
   return (
     <section className="w-full flex flex-col bg-secondary-bg px-12 py-14">
       <div className="mb-2 flex items-center gap-3">
-        <span className="h-[2px] w-5 bg-primary-bg" />
-        <span className="text-xs font-semibold uppercase text-secondary-text">
+        <span className="h-0.5 w-5 bg-primary-bg" />
+        <span className="text-sm font-semibold uppercase text-secondary-text">
           What We Offer
         </span>
       </div>
-      <h2 className="mb-6 text-3xl font-bold text-primary-text">
+      <h2 className="mb-6 text-5xl font-bold text-primary-text">
         A closer look at house wires
       </h2>
       <div className="mb-7 flex items-center gap-3">
@@ -18,7 +18,7 @@ export default function OurProducts() {
           <button
             key={filter}
             type="button"
-            className={`rounded-full px-4 py-2 text-xs font-medium ${
+            className={`rounded-full px-4 py-2 text-sm font-medium ${
               !index ? 'bg-primary-bg text-white' : 'bg-white text-primary-text'
             }`}
           >

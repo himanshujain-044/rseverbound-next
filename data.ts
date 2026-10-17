@@ -1,32 +1,9 @@
-export interface Product {
-  id: number;
-  category: string;
-  label: string;
-  title: string;
-  description: string;
-  coil: string;
-  size: string;
-  primaryUse: string;
-  priceLabel: string;
-  priceRange: string;
-  image: string;
-}
-
-export interface Application {
-  id: number;
-  icon: 'hospital' | 'store' | 'building';
-  title: string;
-  description: string;
-  wire: string;
-  iconPaths: string[];
-  iconRect?: {
-    x: number;
-    y: number;
-    width: number;
-    height: number;
-    rx?: number;
-  };
-}
+import {
+  Product,
+  OurApplication,
+  Feature,
+  FutureScopeItem,
+} from './src/app/types/home-types';
 
 export const categories = [
   'House Wires',
@@ -87,7 +64,7 @@ export const products: Product[] = [
   },
 ];
 
-export const applications: Application[] = [
+export const OurApplications: OurApplication[] = [
   {
     id: 1,
     icon: 'hospital',
@@ -95,7 +72,6 @@ export const applications: Application[] = [
     description:
       'For high-occupancy or poorly ventilated areas where smoke inhalation is a major risk.',
     wire: 'ZHFR HOUSE WIRE',
-    iconRect: { x: 3, y: 7, width: 14, height: 14, rx: 2 },
     iconPaths: ['M10 3v8M6 7h8M8 21v-5h4v5M17 11h4v10h-4'],
   },
   {
@@ -117,9 +93,58 @@ export const applications: Application[] = [
     description:
       'For modern residential apartments and offices, balancing safety and cost.',
     wire: 'FRLSH HOUSE WIRE',
-    iconRect: { x: 3, y: 7, width: 12, height: 14, rx: 1 },
     iconPaths: [
       'M15 11h6v10h-6M7 11h4M7 15h4M7 19h4M8 7V4h3v3M18 15h.01M18 18h.01',
     ],
+  },
+];
+export const feature: Feature[] = [
+  {
+    id: 1,
+    title: 'Guaranteed coil length',
+    description:
+      'Every coil is supplied with a guaranteed length, so you can plan and purchase with confidence.',
+    iconPaths: ['M20 6 9 17l-5-5'],
+  },
+  {
+    id: 2,
+    title: 'High-purity electrolytic copper',
+    description:
+      'High-purity electrolytic copper helps minimize resistance and heat buildup, enhancing electrical conductivity.',
+    iconPaths: ['M13 2 3 14h9l-1 8 10-12h-9l1-8Z'],
+  },
+  {
+    id: 3,
+    title: 'Focused product range',
+    description:
+      'We offer PVC wires, aluminium wires, house wires, and multistrand wires for common electrical installation needs.',
+    iconPaths: ['m12 3 9 5-9 5-9-5 9-5Z', 'm3 12 9 5 9-5', 'm3 16 9 5 9-5'],
+  },
+];
+
+export const futureScope: FutureScopeItem[] = [
+  {
+    id: 1,
+    title: 'Enhanced safety standards',
+    description:
+      'Expand the product range with advanced flame-retardant and low-smoke cable solutions.',
+    iconPaths: ['M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z', 'm9 12 2 2 4-4'],
+  },
+  {
+    id: 2,
+    title: 'Sustainable manufacturing',
+    description:
+      'Explore responsible material sourcing, recyclable packaging, and efficient manufacturing processes.',
+    iconPaths: [
+      'M11 20A7 7 0 0 1 4 13c0-6 8-9 16-9 0 8-3 16-9 16Z',
+      'M8 16c2-3 5-5 9-7',
+    ],
+  },
+  {
+    id: 3,
+    title: 'Broader market reach',
+    description:
+      'Explore new distribution partnerships and expand access to residential, commercial, and infrastructure projects.',
+    iconPaths: ['M3 3v18h18', 'm19 9-5 5-4-4-5 5'],
   },
 ];

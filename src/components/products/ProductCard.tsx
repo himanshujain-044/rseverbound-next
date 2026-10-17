@@ -1,6 +1,8 @@
-import { Product } from '../../../data';
+
 import Image from 'next/image';
 import Button from '../shared/Button';
+import { Product } from '@/src/app/types/home-types';
+
 
 interface ProductCardProps {
   product: Product;
@@ -19,16 +21,16 @@ export default function ProductCard({ product }: ProductCardProps) {
         />
       </div>
       <div className="flex flex-1 flex-col p-5">
-        <p className="mb-2 text-xs font-semibold text-secondary-text">
+        <p className="mb-2 text-sm font-semibold text-secondary-text">
           {product.label}
         </p>
         <h3 className="mb-2 text-xl font-bold leading-6 text-primary-text">
           {product.title}
         </h3>
-        <p className="mb-4 text-sm leading-5 text-primary-text">
+        <p className="mb-4 text-md leading-5 text-primary-text">
           {product.description}
         </p>
-        <div className="flex flex-col gap-2 text-sm">
+        <div className="flex flex-col gap-2 text-md">
           <div className="flex items-start justify-between gap-3">
             <span className="font-medium text-primary-text">Coil</span>
             <span className="text-right text-primary-text">{product.coil}</span>
@@ -45,14 +47,14 @@ export default function ProductCard({ product }: ProductCardProps) {
           </div>
         </div>
         <div className="mt-5">
-          <p className="mb-1 text-sm font-semibold text-primary-text">
+          <p className="mb-1 text-md font-semibold text-primary-text">
             {product.priceLabel}
           </p>
-          <p className="text-sm leading-5 text-primary-text">
+          <p className="text-md leading-5 text-primary-text">
             {product.priceRange}
           </p>
           {product.id !== 3 && (
-            <p className="mt-2 text-xs text-primary-text">
+            <p className="mt-2 text-md text-primary-text">
               Confirm current price before ordering.
             </p>
           )}

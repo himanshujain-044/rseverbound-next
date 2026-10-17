@@ -14,7 +14,7 @@ const Hero = () => {
         <h1 className="text-[72px] font-roboto font-bold leading-[0.90] text-primary-text">
           Reliable Electrical Cables. Built for Performance.
         </h1>
-        <p>
+        <p className="text-lg">
           High-quality PVC and aluminium wires designed for dependable
           installations, from residential house wiring to commercial electrical
           projects.
@@ -31,7 +31,7 @@ const Hero = () => {
             textColor="text-primary-text"
           />
         </div>
-        <h2 className="text-primary-text">
+        <h2  className="text-primary-text text-lg">
           RS Ever Bound · Electrical cable trader
         </h2>
       </div>
