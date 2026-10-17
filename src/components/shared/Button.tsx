@@ -6,7 +6,9 @@ type ButtonProps = {
 
 const Button = ({ text, bgColor, textColor }: ButtonProps) => {
   return (
-    <button className={`${bgColor} ${textColor} rounded-[2px] p-3 font-medium`}>
+    <button
+      className={`${bgColor} ${textColor} cursor-pointer rounded-xs p-3 font-medium`}
+    >
       {text}
     </button>
   );

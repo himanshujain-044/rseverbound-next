@@ -1,5 +1,5 @@
 import ProductCard from './ProductCard';
-import { productFilters, products } from '../../../data';
+import { productFilters, products } from '../../../../data';
 
 export default function OurProducts() {
   return (

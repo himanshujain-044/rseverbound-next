@@ -1,7 +1,7 @@
 import { OurApplications, categories } from '../../data';
 import Hero from '@/src/components/features/Hero';
-import ProductHighlights from '@/src/components/homeComponents/ProductHighlights';
-import OurProducts from '@/src/components/products/OurProducts';
+import ProductHighlights from '@/src/components/features/products/ProductHighlights';
+import OurProducts from '@/src/components/features/products/OurProducts';
 import SharedSvg from '@/src/components/shared/SharedSvg';
 
 export default function Home() {
