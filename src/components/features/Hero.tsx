@@ -1,27 +1,37 @@
 import Image from 'next/image';
+import Button from '../shared/Button';
 
 const Hero = () => {
   return (
     <div className="flex bg-[#EDF4FC] p-12">
-      <div className="flex flex-col flex-1 gap-10 ">
-        <h2 className="text-primary-bg">Electricals Cables & Wires</h2>
-        <h1 className="text-[72px] font-roboto text-primary-text font-bold line leading-[0.90]">
+      <div className="flex flex-1 flex-col gap-10">
+        <div className="mb-5 flex items-center gap-3">
+          <span className="h-0.5 w-7 bg-primary-bg" />
+          <span className="text-sm font-medium uppercase text-primary-bg">
+            Electrical Cables and Wires
+          </span>
+        </div>
+        <h1 className="text-[72px] font-roboto font-bold leading-[0.90] text-primary-text">
           Reliable Electrical Cables. Built for Performance.
         </h1>
-        <p>
+        <p className="text-lg">
           High-quality PVC and aluminium wires designed for dependable
           installations, from residential house wiring to commercial electrical
           projects.
         </p>
         <div className="flex gap-2">
-          <button className="bg-primary-bg text-white p-3 rounded-[2px]">
-            Explore Our Products
-          </button>
-          <button className="bg-white  p-3 rounded-[2px]">
-            Request a Quote
-          </button>
+          <Button
+            text="Explore Our Products"
+            bgColor="bg-primary-bg"
+            textColor="text-white"
+          />
+          <Button
+            text="Request a Quote"
+            bgColor="bg-white"
+            textColor="text-primary-text"
+          />
         </div>
-        <h2 className="text-primary-text">
+        <h2  className="text-primary-text text-lg">
           RS Ever Bound · Electrical cable trader
         </h2>
       </div>
@@ -29,7 +39,9 @@ const Hero = () => {
         <Image
           src="/hero.png"
           alt="Premium Electrical Cables Showcase"
-          fill={true}
+          fill
+          sizes="50vw"
+          priority
           className="object-contain"
         />
       </div>

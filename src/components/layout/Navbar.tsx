@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Button from '../shared/Button';
 
 const Navbar = () => {
   return (
@@ -20,9 +21,11 @@ const Navbar = () => {
         <div>Services</div>
         <div>About</div>
         <div>Contact</div>
-        <div className="bg-primary-bg p-2.5 rounded-[2px] text-white ">
-          Request a Quote
-        </div>
+        <Button
+          text="Request a Quote"
+          bgColor="bg-primary-bg"
+          textColor="text-white"
+        />
       </div>
     </nav>
   );

@@ -15,7 +15,7 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'RS Ever Bound | Electrical Wires & Cables',
+  title: 'RS Ever Bound - Electrical Wires & Cables',
   description:
     'Explore electrical wires and cables from RS Ever Bound, including house wires, FRLSH wires, ZHFR wires, building wires, flame-retardant cables, and coaxial cables. Contact us for product details and enquiries.',
 };
