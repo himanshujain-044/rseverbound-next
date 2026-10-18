@@ -148,3 +148,78 @@ export const futureScope: FutureScopeItem[] = [
     iconPaths: ['M3 3v18h18', 'm19 9-5 5-4-4-5 5'],
   },
 ];
+
+export const aboutSectionIcons = {
+  products: ['m12 3 9 5-9 5-9-5 9-5Z', 'm3 12 9 5 9-5', 'm3 16 9 5 9-5'],
+  location: [
+    'M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z',
+    'M12 10a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z',
+  ],
+};
+
+
+export const contactSectionIcons = {
+  phone: [
+    'M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.14 4.18 2 2 0 0 1 4.13 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.11L8.1 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.84.58 2.8.7a2 2 0 0 1 1.72 2.03Z',
+  ],
+  email: [
+    'M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z',
+    'm22 6-10 7L2 6',
+  ],
+  location: [
+    'M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z',
+    'M12 10a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z',
+  ],
+};
+
+export const footerData = {
+  logo: {
+    src: '/logo.png',
+    alt: 'RS Ever Bound logo',
+    name: 'RS Ever Bound',
+    description:
+      'Electrical cables and wires for your requirements. Explore the range and contact RS Ever Bound for product enquiries.',
+  },
+
+  productLinks: [
+    { label: 'FRLSH Wires', href: '/products' },
+    { label: 'Building Wires', href: '/products' },
+    { label: 'Home Wires', href: '/products' },
+    {
+      label: 'Flame Retardant Low Smoke Low Halogen',
+      href: '/products',
+    },
+    { label: 'Coaxial Cables', href: '/products' },
+  ],
+
+  companyLinks: [
+    { label: 'Our Team', href: '#' },
+    { label: 'Career', href: '#' },
+    { label: 'Blog', href: '#' },
+    { label: 'About Us', href: '/about' },
+    { label: 'Contact Us', href: '/contact' },
+  ],
+
+  contact: {
+    heading: 'Contact RS Ever Bound',
+    phone: '+91 8349112391',
+    phoneLink: 'tel:+918349112391',
+    email: 'rseverbound@gmail.com',
+    emailLink: 'mailto:rseverbound@gmail.com',
+    address: 'Shahgarh, Sagar, Madhya Pradesh, India',
+  },
+
+  socialLinks: [
+    { label: 'Facebook', href: '#' },
+    { label: 'Instagram', href: '#' },
+    { label: 'Twitter', href: '#' },
+  ],
+
+  copyright: '© 2026. All rights reserved by RS Ever Bound',
+
+  bottomLinks: [
+    { label: 'Home', href: '/' },
+    { label: 'Products', href: '/products' },
+    { label: 'Contact', href: '/contact' },
+  ],
+};

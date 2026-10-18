@@ -13,9 +13,10 @@ const Navbar = () => {
           className="object-contain w-auto"
           loading="eager"
         />
-        <span className="text-primary-text font-bold">RS Ever Bound</span>
+        <span className="whitespace-nowrap text-lg font-bold text-primary-text">
+          RS Ever Bound
+        </span>
       </div>
-
       <div className="flex gap-5 items-center">
         <div>Home</div>
         <div>Services</div>
