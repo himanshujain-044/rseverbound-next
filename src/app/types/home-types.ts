@@ -1,8 +1,8 @@
 
 
-export type OurApplicationIcon = 'hospital' | 'store' | 'building';
+export type ourApplicationIcon = 'hospital' | 'store' | 'building';
 
-export interface OurApplication {
+export interface ourApplication {
   id: number;
   icon: 'hospital' | 'store' | 'building';
   title: string;

@@ -1,5 +1,5 @@
 import { feature } from '../../../../data';
-import SharedSvg from '@/src/components/shared/SharedSvg';
+import Svg from '../../shared/Svg';
 
 function FeatureCards() {
   return (
@@ -7,7 +7,7 @@ function FeatureCards() {
       {feature.map((item) => (
         <div key={item.id} className="flex-1 bg-white p-4.5">
           <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#F1F5F9] text-secondary-text">
-            <SharedSvg
+            <Svg
               paths={item.iconPaths}
               width={26}
               height={24}
