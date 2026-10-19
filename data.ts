@@ -1,6 +1,6 @@
 import {
   Product,
-  OurApplication,
+  ourApplication,
   Feature,
   FutureScopeItem,
 } from './src/app/types/home-types';
@@ -64,7 +64,7 @@ export const products: Product[] = [
   },
 ];
 
-export const OurApplications: OurApplication[] = [
+export const ourApplications: ourApplication[] = [
   {
     id: 1,
     icon: 'hospital',

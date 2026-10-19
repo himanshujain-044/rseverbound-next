@@ -1,6 +1,6 @@
 import type { CustomSvgProps } from '@/src/app/types/svg';
 
-export default function SharedSvg({
+export default function Svg({
   paths = [],
   rect,
   width = 24,

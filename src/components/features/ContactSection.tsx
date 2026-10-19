@@ -1,6 +1,6 @@
 import Button from '../shared/Button';
-import SharedSvg from '@/src/components/shared/SharedSvg';
 import { contactSectionIcons, categories } from '../../../data';
+import Svg from '@/src/components/shared/Svg';
 
 export default function ContactSection() {
   return (
@@ -24,7 +24,7 @@ export default function ContactSection() {
         <div className="mt-10 flex flex-col gap-5">
           <div className="flex items-start gap-3">
             <div className="mt-0.5 text-secondary-text">
-              <SharedSvg
+              <Svg
                 paths={contactSectionIcons.phone}
                 width={20}
                 height={20}
@@ -40,7 +40,7 @@ export default function ContactSection() {
           </div>
           <div className="flex items-start gap-3">
             <div className="mt-0.5 text-secondary-text">
-              <SharedSvg
+              <Svg
                 paths={contactSectionIcons.email}
                 width={20}
                 height={20}
@@ -56,7 +56,7 @@ export default function ContactSection() {
           </div>
           <div className="flex items-start gap-3">
             <div className="mt-0.5 text-secondary-text">
-              <SharedSvg
+              <Svg
                 paths={contactSectionIcons.location}
                 width={20}
                 height={20}

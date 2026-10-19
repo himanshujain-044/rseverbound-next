@@ -1,11 +1,11 @@
-import { OurApplications, aboutSectionIcons, categories } from '../../data';
+import { ourApplications, aboutSectionIcons, categories } from '../../data';
 import Hero from '@/src/components/features/Hero';
 import ProductHighlights from '@/src/components/homeComponents/ProductHighlights';
 import OurProducts from '@/src/components/products/OurProducts';
-import SharedSvg from '@/src/components/shared/SharedSvg';
 import Button from '../components/shared/Button';
 import Image from 'next/image';
 import ContactSection from '../components/features/ContactSection';
+import Svg from '@/src/components/shared/Svg';
 
 export default function Home() {
   return (
@@ -53,13 +53,13 @@ export default function Home() {
           Match the wire to the setting
         </h2>
         <div className="flex gap-10">
-          {OurApplications.map((application) => (
+          {ourApplications.map((application) => (
             <div
               key={application.id}
               className="flex flex-1 flex-col border-t border-white pt-5"
             >
               <div className="mb-4 text-secondary-text">
-                <SharedSvg
+                <Svg
                   paths={application.iconPaths}
                   width={26}
                   height={26}
@@ -109,7 +109,7 @@ export default function Home() {
           <div className="my-5 h-px w-full bg-[#E8EEF6]" />
           <div className="flex items-center gap-3">
             <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#EDF4FC] text-secondary-text">
-              <SharedSvg
+              <Svg
                 paths={[...aboutSectionIcons.products]}
                 width={26}
                 height={26}
@@ -125,7 +125,7 @@ export default function Home() {
           </div>
           <div className="mt-3 flex items-center gap-3">
             <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#EDF4FC] text-secondary-text">
-              <SharedSvg
+              <Svg
                 paths={[...aboutSectionIcons.location]}
                 width={26}
                 height={26}
