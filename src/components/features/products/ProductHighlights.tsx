@@ -1,5 +1,5 @@
-import { feature } from '../../../data';
-import Svg from '../shared/Svg';
+import { feature } from '../../../../data';
+import Svg from '../../shared/Svg';
 
 function FeatureCards() {
   return (

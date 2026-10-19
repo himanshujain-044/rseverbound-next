@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Button from '../shared/Button';
+import Link from 'next/link';
 
 const Navbar = () => {
   return (
@@ -18,10 +19,10 @@ const Navbar = () => {
         </span>
       </div>
       <div className="flex gap-5 items-center">
-        <div>Home</div>
-        <div>Services</div>
-        <div>About</div>
-        <div>Contact</div>
+        <Link href="/">Home</Link>
+        <Link href="/services">Services</Link>
+        <Link href="/about-us">About Us</Link>
+        <Link href="/contact-us">Contact Us</Link>
         <Button
           text="Request a Quote"
           bgColor="bg-primary-bg"

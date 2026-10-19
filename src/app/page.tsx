@@ -1,11 +1,11 @@
 import { ourApplications, aboutSectionIcons, categories } from '../../data';
 import Hero from '@/src/components/features/Hero';
-import ProductHighlights from '@/src/components/homeComponents/ProductHighlights';
-import OurProducts from '@/src/components/features/products/OurProducts';
-import Button from '../components/shared/Button';
+import OurProducts from '../components/features/products/OurProducts';
+import ProductHighlights from '../components/features/products/ProductHighlights';
 import Image from 'next/image';
+import Svg from '../components/shared/Svg';
 import ContactSection from '../components/features/ContactSection';
-import Svg from '@/src/components/shared/Svg';
+import Button from '../components/shared/Button';
 
 export default function Home() {
   return (
