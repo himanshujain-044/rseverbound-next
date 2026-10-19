@@ -1,7 +1,7 @@
 import { ourApplications, aboutSectionIcons, categories } from '../../data';
 import Hero from '@/src/components/features/Hero';
 import ProductHighlights from '@/src/components/homeComponents/ProductHighlights';
-import OurProducts from '@/src/components/products/OurProducts';
+import OurProducts from '@/src/components/features/products/OurProducts';
 import Button from '../components/shared/Button';
 import Image from 'next/image';
 import ContactSection from '../components/features/ContactSection';

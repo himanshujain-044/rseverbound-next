@@ -1,8 +1,6 @@
-
 import Image from 'next/image';
-import Button from '../shared/Button';
+import Button from '../../shared/Button';
 import { Product } from '@/src/app/types/home-types';
-
 
 interface ProductCardProps {
   product: Product;
